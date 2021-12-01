@@ -1,0 +1,26 @@
+GET http://localhost:5130/api/v1/pizza
+
+###
+
+GET http://localhost:5130/api/v1/pizza/2
+
+###
+
+POST http://localhost:5130/api/v1/pizza
+content-type: application/json
+
+{
+    "name": "Skuma",
+    "isGlutenFree": false
+}
+
+###
+
+PUT http://localhost:5130/api/v1/pizza/2
+content-type: application/json
+
+{
+    "id": 2,
+    "name": "Hawaiian",
+    "isGlutenFree": false
+}
